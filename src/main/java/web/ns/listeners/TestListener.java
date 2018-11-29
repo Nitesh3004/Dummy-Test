@@ -1,11 +1,16 @@
 package web.ns.listeners;
 
+import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 public class TestListener implements ITestListener{
-
+	
+	// Initialize Log4j logs
+	 
+	//private static Logger Log = Logger.getLogger(Log.class.getName());//
+	
 	public void onFinish(ITestContext result) {
 		// TODO Auto-generated method stub
 		

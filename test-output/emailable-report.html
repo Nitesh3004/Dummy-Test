@@ -31,61 +31,27 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">14.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">16.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">web.ns.testscripts.LoginToNs_01</td><td><a href="#m1"><b>login</b>  </a></td><td class="numi">1</td><td>1527576210573</td><td class="numi">5899</td></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">web.ns.testscripts.LoginToNs_01</td><td><a href="#m1"><b>login</b>  </a></td><td class="numi">1</td><td>1540909517238</td><td class="numi">9162</td></tr>
 </table>
-<h1>Test</h1>
+<h1>Default test</h1>
 <h2 id="m1">web.ns.testscripts.LoginToNs_01:login</h2>
 <div style="padding-left:3em">
-<p>Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //*[contains(text(),&apos;Sign In&apos;)]&apos; (tried for 5 second(s) with 500 milliseconds interval)</p>
+<p>Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (ce669ed1b96f1cd1a0f5193bfb9312d5)] -&gt; xpath: //*[contains(text(),&apos;Voyage&apos;)]] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;10PNQ22436LT01&apos;, ip: &apos;10.32.128.70&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\NMehra\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.87, webStorageEnabled: true}
+Session ID: ce669ed1b96f1cd1a0f5193bfb9312d5</p>
 org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
 <br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
 <br/>at web.ns.utilities.ReusableComponents.waitForElement(ReusableComponents.java:60)
-<br/>at web.ns.pageobjects.NsWebHomePage.enterUserName(NsWebHomePage.java:25)
-<br/>at web.ns.testscripts.LoginToNs_01.login(LoginToNs_01.java:20)
-<br/>25 lines not shown
-<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),&apos;Sign In&apos;)]&quot;}
-  (Session info: chrome=66.0.3359.181)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;10PNQ22436LT01&apos;, ip: &apos;10.32.128.182&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\NMehra\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: b74a09a66d66e86eb043e546c3018155
-*** Element info: {Using=xpath, value=//*[contains(text(),&apos;Sign In&apos;)]}</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
-<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-<br/>at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
-<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
-<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-<br/>at web.ns.utilities.ReusableComponents.waitForElement(ReusableComponents.java:60)
-<br/>at web.ns.pageobjects.NsWebHomePage.enterUserName(NsWebHomePage.java:25)
-<br/>at web.ns.testscripts.LoginToNs_01.login(LoginToNs_01.java:20)
+<br/>at web.ns.pageobjects.WorkSpaceVoyageManager.clickVoyage(WorkSpaceVoyageManager.java:31)
+<br/>at web.ns.testscripts.LoginToNs_01.login(LoginToNs_01.java:41)
 <br/>25 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>

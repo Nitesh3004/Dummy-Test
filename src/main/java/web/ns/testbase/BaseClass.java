@@ -45,6 +45,7 @@ public class BaseClass {
 		driver.manage().window().maximize();
 	}
 	
+	
 	@AfterMethod()
 	public void tearDown(ITestResult result ) {
 		if(result.getStatus()==ITestResult.FAILURE)
